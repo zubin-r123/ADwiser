@@ -10,8 +10,6 @@ from model import load_model, predict   # <- helper functions
 # ---------------------------------------------------
 # 1. Set up Gemini API
 # ---------------------------------------------------
-# (⚠️ Use environment variable, don’t hardcode your API key!)
-#genai.configure(api_key="AIzaSyDdJ8UohFhJmY45pav8hRPyvopk4BTdNQE")
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 
@@ -113,4 +111,5 @@ if uploaded:
 
     except Exception as e:
         st.error(f"Error reading CSV: {e}")
+
 
