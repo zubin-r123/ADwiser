@@ -24,10 +24,15 @@ It allows marketers to upload campaign data, instantly predict ROI for each row,
 ## 📂 Project Structure
 
 adwiser/
+
 app.py # Main Streamlit app
+
 model.py # Feature engineering, load_model, predict helpers
+
 roi_ensemble.joblib # Pretrained blended model (RF + XGB)
+
 requirements.txt # Python dependencies
+
 README.md # Project documentation
 
 
